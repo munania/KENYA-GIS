@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+.container {
+    width: 100%;
+    background: rgb(34, 34, 34);
+    margin: auto;
+    padding: 10px;
+}
+
+.one {
+    width: 20%;
+    background: rgb(180, 179, 243);
+    float: left;
+}
+
+.two {
+    margin-left: 15%;
+    background: rgb(34, 34, 34);
+}
+
+
+#map {
+    height: 1000px;
+}
+
+.legend {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.legend-item {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 90%;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 1px solid #000;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #008CBA;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: 900;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    animation: btn 0.4s ease-out;
+    background-color: #cac71d;
+    color: #000;
+}
+@keyframes btn {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

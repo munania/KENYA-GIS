@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Interactive Kenya Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="one">
+            <div id="legend" class="legend">
+                <h2>KENYAN COUNTIES GIS</h2>
+                <button class="btn" onclick="exportImage()">Export as PNG</button>
+                <!-- <button onclick="exportCSV()">Export as CSV</button> -->
+                <button class="btn" onclick="exportPPT()">Export as PPT</button>
+                <!-- <button onclick="exportXLSX()">Export as XLSX</button> -->
+                <br><br>
+                <!-- <input type="text" id="legend-title" placeholder="Add Legend Title"> -->
+
+                    <h2 id="legend-title"></h2>
+                    <div id="legend-details"></div>
+
+
+            </div>
+            <div style="margin-top: 200px;">
+
+            </div>
+
+            <div id="legend" class="legend">
+                <h2>TIPS</h2>
+                <p>Click on a county to select it</p>
+                <p>Click on a county with a color to deselect it</p>
+                <p style="color: red;"><Strong>Ensure</Strong> the map is <strong>CENTERED</strong> before exporting it</p>
+
+
+            </div>
+        </div>
+        <div class="two">
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-image/0.4.0/leaflet-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
